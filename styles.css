@@ -52,6 +52,18 @@ body {
 }
 .brand .brand-logo { height: 28px; width: auto; display: inline-block; }
 .brand .brand-name { letter-spacing: 0.5px; }
+
+/* Hero logo lockup */
+.logo-lockup { display: grid; place-items: center; margin-bottom: 10px; }
+.logo-badge {
+  width: clamp(80px, 18vw, 140px);
+  height: auto;
+  border-radius: 12px;
+  background: rgba(17,36,60,0.55);
+  border: 1px solid rgba(212,175,55,0.35);
+  padding: 6px;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+}
 .nav-links {
   display: flex;
   align-items: center;
