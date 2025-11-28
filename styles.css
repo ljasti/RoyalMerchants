@@ -3,8 +3,8 @@
   --clr-bg: #f5f6fa;          /* very light cool grey */
   --clr-surface: #f8f9fb;     /* soft off-white surface */
   --clr-primary: #e5e7eb;     /* light grey */
-  --clr-accent: #c62828;      /* brand red */
-  --clr-accent-2: #e53935;    /* brighter red for hover */
+  --clr-accent: #d6483d;      /* warm red like reference */
+  --clr-accent-2: #e35c50;    /* hover red */
   --clr-text: #111827;        /* near black */
   --clr-muted: #4b5563;       /* medium grey text */
   --clr-border: #e5e7eb;      /* light grey border */
@@ -12,7 +12,7 @@
   --clr-heading-main: var(--clr-accent); /* main headers in red */
   --clr-heading-sub: #374151;            /* subheaders in dark grey */
 
-  --radius: 14px;
+  --radius: 18px;
   --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
   --blur: saturate(180%) blur(6px);
 }
@@ -20,7 +20,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--clr-text);
   background: linear-gradient(180deg, #f8f9fb 0%, #f5f6fa 100%);
 }
@@ -64,10 +64,10 @@ body {
   width: clamp(80px, 18vw, 140px);
   height: auto;
   border-radius: 12px;
-  background: rgba(17,36,60,0.55);
-  border: 1px solid rgba(212,175,55,0.35);
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--clr-border);
   padding: 6px;
-  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.35));
+  filter: drop-shadow(0 10px 20px rgba(17,24,39,0.10));
 }
 .nav-links {
   display: flex;
@@ -88,7 +88,7 @@ body {
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid rgba(212,175,55,0.35);
+  border: 1px solid var(--clr-border);
   color: var(--clr-text);
   padding: 6px 10px;
   border-radius: 8px;
@@ -303,3 +303,13 @@ input::placeholder, textarea::placeholder { color: #7c8da3; }
   .footer-content { grid-template-columns: 1fr; gap: 12px; text-align: center; }
   .footer-copy { text-align: center; }
 }
+
+/* Living Vehicle inspired overrides */
+.section-title {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+.product-card img, .gallery-card img { border-radius: var(--radius); }
+.btn-primary { background: var(--clr-accent); box-shadow: 0 10px 16px rgba(214,72,61,0.18); }
+.nav-toggle { background: var(--clr-accent); border: none; color: #ffffff; width: 44px; height: 44px; border-radius: 999px; box-shadow: 0 8px 16px rgba(214,72,61,0.25); }
