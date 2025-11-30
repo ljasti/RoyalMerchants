@@ -1,0 +1,35 @@
+/* Neutral, professional brochure styling */
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --steel: #9ca3af;
+  --line: #e5e7eb;
+  --accent: #d6483d;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: Inter, Segoe UI, Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
+header {
+  padding: 24px 0; border-bottom: 1px solid var(--line);
+}
+.wrap { width: min(1100px, 92vw); margin: 0 auto; }
+.title { font-family: "Cinzel", Georgia, serif; font-size: clamp(1.8rem, 4.8vw, 2.4rem); margin: 0; color: var(--text); }
+.subtitle { color: var(--muted); margin: 6px 0 0; }
+main { padding: 24px 0 60px; }
+section { margin: 24px 0; }
+section h2 { font-family: "Cinzel", Georgia, serif; font-size: clamp(1.4rem, 4vw, 2rem); margin: 0 0 10px; }
+.grid { display: grid; gap: 16px; }
+.cols-2 { grid-template-columns: 1fr 1fr; }
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; box-shadow: 0 8px 24px rgba(17,24,39,0.06); background: #fff; }
+.card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.desc { color: var(--muted); }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(17,24,39,0.06); }
+figure img, figure svg { width: 100%; height: auto; display: block; background: #fafafa; }
+.meta { color: var(--muted); font-size: 0.95rem; }
+.list { display: grid; gap: 8px; }
+.bullet { display: grid; grid-template-columns: 20px 1fr; gap: 8px; align-items: start; }
+.bullet .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); margin-top: 6px; }
+.badge { display: inline-block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding: 18px 0; color: var(--muted); }

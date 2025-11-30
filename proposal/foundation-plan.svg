@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect x="0" y="0" width="1200" height="700" fill="#ffffff"/>
+  <!-- Foundation grid -->
+  <g transform="translate(120,140)">
+    <rect x="0" y="0" width="900" height="420" fill="#f9fafb" stroke="#d1d5db"/>
+    <!-- Stone-filled pits -->
+    <rect x="60" y="60" width="80" height="80" fill="#e5e7eb" stroke="#9ca3af"/>
+    <rect x="760" y="60" width="80" height="80" fill="#e5e7eb" stroke="#9ca3af"/>
+    <rect x="60" y="280" width="80" height="80" fill="#e5e7eb" stroke="#9ca3af"/>
+    <rect x="760" y="280" width="80" height="80" fill="#e5e7eb" stroke="#9ca3af"/>
+    <!-- Simple pedestals -->
+    <rect x="400" y="60" width="80" height="80" fill="#eef2f7" stroke="#cbd5e1"/>
+    <rect x="400" y="280" width="80" height="80" fill="#eef2f7" stroke="#cbd5e1"/>
+    <!-- Anchor plates -->
+    <circle cx="100" cy="100" r="6" fill="#d6483d"/>
+    <circle cx="800" cy="100" r="6" fill="#d6483d"/>
+    <circle cx="100" cy="320" r="6" fill="#d6483d"/>
+    <circle cx="800" cy="320" r="6" fill="#d6483d"/>
+  </g>
+  <text x="40" y="60" font-family="Cinzel, Georgia, serif" font-size="28" fill="#111827">Foundation Plan (BC Soil)</text>
+  <text x="40" y="90" font-family="Inter, Arial, sans-serif" font-size="16" fill="#4b5563">Stone-filled pits or simple pedestals with anchor plates; optional tie beams</text>
+</svg>

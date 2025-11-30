@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#ffffff"/>
+  <!-- Elevation -->
+  <g transform="translate(80,80)">
+    <rect x="0" y="0" width="480" height="220" fill="#f9fafb" stroke="#d1d5db"/>
+    <!-- Arch roof silhouette -->
+    <path d="M0,0 C160,-80 320,-80 480,0" fill="none" stroke="#6b7280" stroke-width="3" />
+    <rect x="60" y="80" width="360" height="100" fill="#e5e7eb" stroke="#9ca3af"/>
+    <text x="0" y="-10" font-family="Cinzel" font-size="20" fill="#111827">Elevation</text>
+  </g>
+  <!-- Section A-A -->
+  <g transform="translate(680,80)">
+    <rect x="0" y="0" width="480" height="220" fill="#f9fafb" stroke="#d1d5db"/>
+    <path d="M0,200 C160,40 320,40 480,200" fill="none" stroke="#6b7280" stroke-width="3" />
+    <line x1="240" y1="0" x2="240" y2="220" stroke="#9ca3af" stroke-dasharray="6,6" />
+    <text x="0" y="-10" font-family="Cinzel" font-size="20" fill="#111827">Section A-A</text>
+  </g>
+  <!-- Notes -->
+  <text x="80" y="360" font-family="Inter" font-size="14" fill="#374151">Arch trusses at 6m bay spacing; braced end bays, purlins @1.2–1.5m</text>
+  <text x="80" y="380" font-family="Inter" font-size="14" fill="#374151">Modules dock beneath roof, maintaining clearance for ventilation and light</text>
+</svg>

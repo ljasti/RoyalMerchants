@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect x="0" y="0" width="1200" height="800" fill="#ffffff"/>
+  <!-- Truss node detail -->
+  <g transform="translate(100,120)">
+    <rect x="0" y="0" width="420" height="260" fill="#f9fafb" stroke="#d1d5db"/>
+    <circle cx="210" cy="130" r="10" fill="#6b7280"/>
+    <line x1="60" y1="60" x2="210" y2="130" stroke="#6b7280" stroke-width="4"/>
+    <line x1="360" y1="60" x2="210" y2="130" stroke="#6b7280" stroke-width="4"/>
+    <text x="10" y="20" font-family="Cinzel" font-size="18" fill="#111827">Truss Node</text>
+    <text x="10" y="40" font-family="Inter" font-size="14" fill="#374151">Fillet welds 6–8mm; galvanized post-weld coating</text>
+  </g>
+  <!-- Panel join detail -->
+  <g transform="translate(580,120)">
+    <rect x="0" y="0" width="420" height="260" fill="#f9fafb" stroke="#d1d5db"/>
+    <rect x="40" y="40" width="150" height="120" fill="#e5e7eb" stroke="#9ca3af"/>
+    <rect x="230" y="40" width="150" height="120" fill="#e5e7eb" stroke="#9ca3af"/>
+    <rect x="190" y="40" width="20" height="120" fill="#cbd5e1"/>
+    <text x="10" y="20" font-family="Cinzel" font-size="18" fill="#111827">Sandwich Panel Join</text>
+    <text x="10" y="40" font-family="Inter" font-size="14" fill="#374151">Interlocking joint with weather seal; A-grade fire-rated</text>
+  </g>
+  <!-- Floor buildup -->
+  <g transform="translate(100,420)">
+    <rect x="0" y="0" width="900" height="200" fill="#f9fafb" stroke="#d1d5db"/>
+    <rect x="20" y="40" width="860" height="30" fill="#9ca3af"/>
+    <rect x="20" y="80" width="860" height="20" fill="#e5e7eb"/>
+    <rect x="20" y="110" width="860" height="20" fill="#cbd5e1"/>
+    <text x="40" y="30" font-family="Cinzel" font-size="18" fill="#111827">Floor Build-Up</text>
+    <text x="40" y="75" font-family="Inter" font-size="14" fill="#374151">18mm MgO</text>
+    <text x="140" y="95" font-family="Inter" font-size="14" fill="#374151">15mm Laminate</text>
+    <text x="260" y="115" font-family="Inter" font-size="14" fill="#374151">PVC Protective Layer</text>
+  </g>
+</svg>

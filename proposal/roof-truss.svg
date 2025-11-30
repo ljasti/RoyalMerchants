@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect x="0" y="0" width="1200" height="700" fill="#ffffff"/>
+  <!-- Curved truss detailing -->
+  <g transform="translate(100,120)" fill="none" stroke="#6b7280" stroke-width="4">
+    <!-- Arch chords -->
+    <path d="M0,420 C220,80 780,80 1000,420" />
+    <!-- Web members -->
+    <line x1="80" y1="380" x2="140" y2="300" />
+    <line x1="140" y1="300" x2="220" y2="260" />
+    <line x1="220" y1="260" x2="320" y2="220" />
+    <line x1="320" y1="220" x2="440" y2="200" />
+    <line x1="440" y1="200" x2="560" y2="200" />
+    <line x1="560" y1="200" x2="680" y2="220" />
+    <line x1="680" y1="220" x2="800" y2="260" />
+    <line x1="800" y1="260" x2="900" y2="320" />
+    <line x1="900" y1="320" x2="980" y2="380" />
+  </g>
+  <!-- Purlin spacing and labels -->
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="200" y1="360" x2="1000" y2="360" />
+    <line x1="240" y1="300" x2="960" y2="300" />
+    <line x1="280" y1="250" x2="920" y2="250" />
+  </g>
+  <text x="120" y="560" font-family="Inter" font-size="14" fill="#374151">Purlin spacing: 1.2–1.5m</text>
+  <text x="120" y="580" font-family="Inter" font-size="14" fill="#374151">Primary chords: 3.0–4.0mm; Webs: 2.0–2.5mm (galvanized)</text>
+  <text x="40" y="60" font-family="Cinzel, Georgia, serif" font-size="28" fill="#111827">German Hanger Roof Truss Detailing</text>
+</svg>
