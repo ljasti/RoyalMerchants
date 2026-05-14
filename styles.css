@@ -79,6 +79,37 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--clr-text);
+}
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+.nav-dropdown[open] summary {
+  color: var(--clr-accent);
+}
+.nav-dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  min-width: 220px;
+  background: rgba(255,255,255,0.98);
+  border: 1px solid var(--clr-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+}
+.nav-dropdown-menu a {
+  white-space: nowrap;
+}
 .nav-links .btn-outline {
   border: 1px solid var(--clr-accent);
   padding: 8px 14px;
@@ -110,7 +141,7 @@ body {
     radial-gradient(ellipse at 15% 15%, rgba(198,40,40,0.08), transparent 40%),
     radial-gradient(ellipse at 85% 85%, rgba(17,24,39,0.05), transparent 40%),
     linear-gradient(180deg, rgba(248,249,251,0.92), rgba(245,246,250,0.98)),
-    url('assets/alledibles.svg');
+    url('assets/gallery-logistics.svg');
   background-size: cover;
   background-position: center;
   filter: brightness(1.02) contrast(1.02) saturate(1.02);
@@ -176,6 +207,7 @@ body {
 /* Cards & Grids */
 .about-grid, .grid { display: grid; gap: 18px; }
 .about-grid { grid-template-columns: repeat(3, 1fr); }
+.cards-1 { grid-template-columns: 1fr; max-width: 760px; margin-inline: auto; }
 .cards-3 { grid-template-columns: repeat(3, 1fr); }
 .cards-4 { grid-template-columns: repeat(4, 1fr); }
 
@@ -330,6 +362,15 @@ input::placeholder, textarea::placeholder { color: #7c8da3; }
   .nav-links { display: none; }
   .nav-links.open { display: grid; gap: 12px; position: absolute; right: 4%; top: 64px;
     background: rgba(255,255,255,0.98); padding: 12px; border-radius: 10px; border: 1px solid var(--clr-border); }
+  .nav-dropdown-menu {
+    position: static;
+    min-width: auto;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 8px 0 0;
+    background: transparent;
+  }
   .trust-points { grid-template-columns: 1fr; }
   .about-grid, .cards-3, .cards-4 { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }

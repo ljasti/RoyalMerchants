@@ -27,6 +27,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+const placeholderSrc = 'assets/placeholder.svg';
+const imageExts = ['.png', '.jpg', '.jpeg', '.webp', '.svg'];
+const trySetImage = (img, baseOrUrl) => {
+  if (!baseOrUrl) return;
+  const hasExt = /\.[a-zA-Z0-9]+$/.test(baseOrUrl);
+  const candidates = hasExt ? [baseOrUrl] : imageExts.map(ext => `${baseOrUrl}${ext}`);
+  const tryNext = index => {
+    if (index >= candidates.length) return;
+    const url = candidates[index];
+    const probe = new Image();
+    probe.onload = () => { img.src = url; };
+    probe.onerror = () => tryNext(index + 1);
+    probe.src = url;
+  };
+  tryNext(0);
+};
+document.querySelectorAll(`img[src="${placeholderSrc}"][data-image]`).forEach(img => {
+  trySetImage(img, img.getAttribute('data-image'));
+});
+
 // Reveal on scroll (fallback for iOS Safari)
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
